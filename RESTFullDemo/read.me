@@ -1,0 +1,36 @@
+# გამოიყენეთ postman -ი :  https://www.postman.com/downloads/
+# ან ინტელიჯეიში tools-> HTTP Client
+
+#1  @Path("/hi")
+    http://localhost:8080/RESTFullDemo_war_exploded/api/studentManager/hi
+
+#2  @Path("/students")
+    http://localhost:8080/RESTFullDemo_war_exploded/api/studentManager/students
+
+#3  @Path("addStudent")
+    RequestType  - POST
+    Content-Type   -  application/json
+    http://localhost:8080/RESTFullDemo_war_exploded/api/studentManager/addStudent
+
+    {
+        "id": 5,
+        "name": "Giorgi",
+        "age": 27
+    }
+
+#4 @Path("/getStudent/{id}")
+   http://localhost:8080/RESTFullDemo_war_exploded/api/studentManager/getStudent/1
+
+#5  @Path("/{id}")
+    RequestType  - PUT
+    http://localhost:8080/RESTFullDemo_war_exploded/api/studentManager/1
+
+    {
+        "id": 5,
+        "name": "Giorgi",
+        "age": 30
+    }
+
+#6  @Path("/{id}")
+    RequestType  - PUT
+    http://localhost:8080/RESTFullDemo_war_exploded/api/studentManager/1
