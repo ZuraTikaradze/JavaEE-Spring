@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="SOAPDemo:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>SOAPDemo</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="SOAPDemo.war">
+      <element id="artifact" artifact-name="SOAPDemo:war exploded" />
+    </root>
+  </artifact>
+</component>
